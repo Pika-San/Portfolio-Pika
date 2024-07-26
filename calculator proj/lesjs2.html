@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Repayment Calculator</title>
+    <link rel="stylesheet" href="lesjs2.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Loan Repayment Calculator</h1>
+        <label for="name">Naam:</label>
+        <input type="text" id="name" placeholder="Voer uw naam in">
+        
+        <label for="principal">Leensom (SRD):</label>
+        <input type="number" id="principal" placeholder="Voer de leensom in">
+        
+        <label for="interestRate">Rentepercentage (%):</label>
+        <input type="number" id="interestRate" placeholder="Voer het rentepercentage in">
+        
+        <button onclick="calculateLoan()">Bereken</button>
+        
+        <div id="output">
+            <p id="outputName"></p>
+            <p id="outputPrincipal"></p>
+            <p id="outputPayment"></p>
+        </div>
+    </div>
+    <script src="lesjs2.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #2d2d70, #5b3a70);
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    background-color: #3a3a5c;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-shadow: 2px 2px #6e67ab;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #6e67ab;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #4a4a72;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #9e8ccf;
+    box-shadow: 0 0 10px #9e8ccf;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #6e67ab;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #9e8ccf;
+    transform: scale(1.1);
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        text-shadow: 1.5px 1.5px #6e67ab;
+    }
+
+    input[type="number"] {
+        width: 50px;
+        padding: 8px;
+        margin-top: 8px;
+        border-radius: 8px;
+        font-size: 1em;
+    }
+
+    button {
+        padding: 8px 16px;
+        margin-top: 15px;
+        font-size: 1em;
+        border-radius: 8px;
+    }
+
+    #message {
+        margin-top: 15px;
+        font-size: 1em;
+    }
+}
